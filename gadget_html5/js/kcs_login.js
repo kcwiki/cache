@@ -215,6 +215,7 @@ function kcsGetLoginToken()
                 params[gadgets.io.RequestParameters.METHOD]         = gadgets.io.MethodType.GET;
                 params[gadgets.io.RequestParameters.CONTENT_TYPE]   = gadgets.io.ContentType.JSON;
                 params[gadgets.io.RequestParameters.AUTHORIZATION]  = gadgets.io.AuthorizationType.SIGNED;
+                params["OAUTH_SIGNATURE_PUBLICKEY"]  = "key_2020";
 
                 // リクエストの URL に現在時刻（ミリ秒）を追加する。
                 // （ガジェットのキャッシュを読み込んでしまわないように）
