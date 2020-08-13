@@ -1,0 +1,28 @@
+{
+  "createdBy": "Redirector v3.5.3",
+  "createdAt": "2020-05-09T10:42:43.924Z",
+  "redirects": [
+    {
+      "description": "KanColle",
+      "exampleUrl": "http://203.104.209.7/gadget_html5/js/kcs_const.js",
+      "exampleResult": "https://kcwiki.github.io/cache/gadget_html5/js/kcs_const.js",
+      "error": null,
+      "includePattern": "http://203.104.209.7/(.+)",
+      "excludePattern": "",
+      "patternDesc": "KanColle gadget server block bypass",
+      "redirectUrl": "https://kcwiki.github.io/cache/$1",
+      "patternType": "R",
+      "processMatches": "noProcessing",
+      "disabled": false,
+      "grouped": false,
+      "appliesTo": [
+        "main_frame",
+        "sub_frame",
+        "font",
+        "image",
+        "script",
+        "stylesheet"
+      ]
+    }
+  ]
+}

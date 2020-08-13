@@ -1,0 +1,126 @@
+﻿@charset "utf-8";
+/* reset CSS */
+
+html{
+	color:#333;
+	font-size:13px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+ *font-size:small;
+ *font:x-small;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+ text-align:center;
+}
+
+img{
+	border:0px;
+	vertical-align:top;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0px;
+	padding:0px;
+	font-size:100%;
+}
+
+div,p,ul,ol,li,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	font-size:100%;
+}
+
+ul,dl,ol{ text-indent:0;}
+
+li{list-style:none;}
+
+address,caption,cite,code,dfn,em,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+
+sup{ vertical-align:text-top;}
+sub{ vertical-align:text-bottom;}
+
+input,textarea,select{
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	font-family:"MS P Gothic","ＭＳ Ｐゴシック",Osaka,Verdana,Helvetica,sans-serif;
+}
+
+* html input,
+* html textarea,
+* html select{
+	font-size:100%;
+	font-family:"MS P Gothic","ＭＳ Ｐゴシック",Osaka,Verdana,Helvetica,sans-serif;
+} /* IE6 */
+*+html input,
+*+html textarea,
+*+html select{
+	font-size:100%;
+	font-family:"MS P Gothic","ＭＳ Ｐゴシック",Osaka,Verdana,Helvetica,sans-serif;
+} /* IE7 */
+
+
+table{
+	border-collapse:collapse;
+	border-spacing:0px;
+	font-size:inherit;
+	font:100%;
+ margin:0; padding:0;
+}
+th,td{
+	text-align:left;
+	vertical-align:top;
+ margin:0; padding:0;
+}
+caption{ text-align:left;}
+
+pre,code,kbd,samp,tt{ font-family:monospace;}
+*html pre,
+*html code,
+*html kbd,samp,
+*html tt{
+	font-size:108%;
+	line-height:100%;
+} /* IE6 */
+*+html pre,
+*+html code,
+*+html kbd,samp,
+*+html tt{
+	font-size:108%;
+	line-height:100%;
+} /* IE7 */
+
+
+.none{display:none;}
+.clear{clear:both;}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*\*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+.clearfixSec  {
+overflow:hidden;
+}
+* html .clearfixSec {
+height:1%;
+}
