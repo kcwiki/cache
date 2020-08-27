@@ -54,12 +54,12 @@ ConnectionInfo.Interval_Min   = 10;
 var MaintenanceInfo = {};
 MaintenanceInfo.IsDoing       = 0;
 MaintenanceInfo.IsEmergency   = 0;
-MaintenanceInfo.StartDateTime = Date.parse("2020/06/26 11:00:00");
-MaintenanceInfo.EndDateTime   = Date.parse("2020/06/27 02:00:00");
+MaintenanceInfo.StartDateTime = Date.parse("2020/08/27 11:00:00");
+MaintenanceInfo.EndDateTime   = Date.parse("2020/08/27 22:00:00");
 
 // Version 情報
 var VersionInfo = {};
-VersionInfo.scriptVesion      = "4.6.3.1";
+VersionInfo.scriptVesion      = "5.0.0.0";
 
 // Entrance 情報
 var EntranceInfo = {};
