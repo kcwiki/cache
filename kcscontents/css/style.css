@@ -117,6 +117,7 @@ a.hint:hover span{display:inline; position:absolute; border:1px solid #cccccc; b
 .pageWrap .page4 .post {font-size:93%!important; line-height:1.2!important;}
 .pageWrap .page5 {width:760px;position:absolute;left:760px;}
 .pageWrap .page6 {width:760px;position:absolute;left:760px;}
+.pageWrap .page7 {width:760px;position:absolute;left:760px;}
 
 .pageWrap .page1nav {background:#1F8E90;color:#FFF;font-size:12px;width:100px;margin:5px auto;line-height:1;padding:.5em !important; cursor:pointer;float:right;}
 
@@ -125,7 +126,7 @@ a.hint:hover span{display:inline; position:absolute; border:1px solid #cccccc; b
 /*ranking*/
 
 .rankPdt10{padding-top:10px!important;}
-.rankWrap01 {height:1025px!important;} /* 20201210 (920 to 1025) */
+.rankWrap01 {height:920px!important;}
 
 .rankingTable {margin-top:70px; 
    width: 760px;
