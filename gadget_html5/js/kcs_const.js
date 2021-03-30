@@ -55,11 +55,11 @@ var MaintenanceInfo = {};
 MaintenanceInfo.IsDoing       = 1;
 MaintenanceInfo.IsEmergency   = 0;
 MaintenanceInfo.StartDateTime = Date.parse("2021/03/30 11:00:00");
-MaintenanceInfo.EndDateTime   = Date.parse("2021/03/30 20:50:00");
+MaintenanceInfo.EndDateTime   = Date.parse("2021/03/30 21:20:00");
 
 // Version 情報
 var VersionInfo = {};
-VersionInfo.scriptVesion      = "5.1.4.1";
+VersionInfo.scriptVesion      = "5.1.5.0";
 
 // Entrance 情報
 var EntranceInfo = {};
