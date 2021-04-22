@@ -59,7 +59,7 @@ MaintenanceInfo.EndDateTime   = Date.parse("2021/04/22 21:00:00");
 
 // Version 情報
 var VersionInfo = {};
-VersionInfo.scriptVesion      = "5.1.5.4";
+VersionInfo.scriptVesion      = "5.1.6.0";
 
 // Entrance 情報
 var EntranceInfo = {};
