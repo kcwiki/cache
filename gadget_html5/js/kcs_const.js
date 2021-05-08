@@ -55,7 +55,7 @@ var MaintenanceInfo = {};
 MaintenanceInfo.IsDoing       = 1;
 MaintenanceInfo.IsEmergency   = 0;
 MaintenanceInfo.StartDateTime = Date.parse("2021/05/08 13:30:00");
-MaintenanceInfo.EndDateTime   = Date.parse("2021/05/08 23:30:00");
+MaintenanceInfo.EndDateTime   = Date.parse("2021/05/08 23:50:00");
 
 // Version 情報
 var VersionInfo = {};
