@@ -14,7 +14,9 @@ const update = async () => {
   await map(keys(lastModified), async url => {
     const res = await fetch(url, { headers: { 'if-modified-since': lastModified[url] } })
     if (res.status === 200) {
-      outputFileSync(url.replace('http://203.104.209.7/', ''), await res.buffer())
+      const path = url.replace('http://203.104.209.7/', '')
+      const data = path === 'kcscontents/news/index.html' ? (await res.text()).replace('http://', 'https://') : await res.buffer()
+      outputFileSync(path, data)
       lastModified[url] = res.headers.get('last-modified')
       modified = true
       console.log(`update : ${url}, ${lastModified[url]}`)
