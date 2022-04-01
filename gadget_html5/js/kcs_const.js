@@ -52,7 +52,7 @@ ConnectionInfo.Interval_Min   = 10;
 
 // Maintenance 情報
 var MaintenanceInfo = {};
-MaintenanceInfo.IsDoing       = 0;
+MaintenanceInfo.IsDoing       = 1;
 MaintenanceInfo.IsEmergency   = 0;
 MaintenanceInfo.StartDateTime = Date.parse("2022/04/01 00:00:00");
 MaintenanceInfo.EndDateTime   = Date.parse("2022/04/01 00:59:59");
