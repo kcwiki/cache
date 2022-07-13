@@ -216,6 +216,9 @@ function kcsGetLoginToken()
                 params[gadgets.io.RequestParameters.CONTENT_TYPE]   = gadgets.io.ContentType.JSON;
                 params[gadgets.io.RequestParameters.AUTHORIZATION]  = gadgets.io.AuthorizationType.SIGNED;
 
+                // 2022/07/13 鍵更新対応
+                params[dmm.io.RequestParameters.OAUTH_SIGNATURE_PUBLICKEY]  = "key_2032";
+
                 // リクエストの URL に現在時刻（ミリ秒）を追加する。
                 // （ガジェットのキャッシュを読み込んでしまわないように）
                 var date = new Date();
