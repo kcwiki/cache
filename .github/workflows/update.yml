@@ -1,0 +1,27 @@
+name: Update
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+      - run: yarn --frozen-lockfile
+      - run: node update.js -
+        env:
+          EDGE: ${{ secrets.EDGE }}
+      - run: |
+          git add .
+          TZ=Asia/Tokyo git commit -m "$(date +%Y-%m-%d)"
+          git push git@github.com:kcwiki/cache.git master
+          echo done
+        env:
+          GIT_AUTHOR_NAME: Botkaze
+          GIT_AUTHOR_EMAIL: gkpyon+1@gmail.com
+          GIT_COMMITTER_NAME: Botkaze
+          GIT_COMMITTER_EMAIL: gkpyon+1@gmail.com

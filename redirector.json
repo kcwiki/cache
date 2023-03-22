@@ -15,14 +15,7 @@
       "processMatches": "noProcessing",
       "disabled": false,
       "grouped": false,
-      "appliesTo": [
-        "main_frame",
-        "sub_frame",
-        "font",
-        "image",
-        "script",
-        "stylesheet"
-      ]
+      "appliesTo": ["main_frame", "sub_frame", "font", "image", "script", "stylesheet"]
     }
   ]
 }
