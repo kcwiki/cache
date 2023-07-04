@@ -1,6 +1,6 @@
 ﻿// ガジェット情報
 var ConstGadgetInfo = {};
-ConstGadgetInfo.height = 860;
+ConstGadgetInfo.height = 1160; //860;
 
 // SNS 情報
 var ConstSNSInfo = {};

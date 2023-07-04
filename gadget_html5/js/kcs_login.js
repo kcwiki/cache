@@ -179,6 +179,25 @@ function kcsGetLoginToken()
             {
                 // 画面下部の情報セクションを表示する。
                 document.getElementById("sectionWrap").style.display = "block";
+
+                // 2023-07-04 メンテナンスのお知らせの下部に追加メッセージを表示する。
+                var message = 
+                  "-----<br>" +
+                  "提督の皆さん、お疲れさまです！<br>" +
+                  "<br>" +
+                  "「艦これ」稼働全20サーバ群は【7/7(金) 11:00】より七夕メンテナンス＆アップデートを実施予定です。<br>" +
+                  "同メンテ突入時を以て、現在展開中の<br>" +
+                  "【梅雨限定任務群】及び<br>" +
+                  "春任務【春の海上警備行動！艦隊、抜錨せよ！】<br>" +
+                  "春任務【春！「三一駆」旗艦「長波」、出撃せよ！】<br>" +
+                  "は一旦任務終了予定です。<br>" +
+                  "<br>" +
+                  "いい風きてる？<br>" +
+                  "「艦これ」七夕メンテナンス＆アップデート、<br>" +
+                  "ご協力どうぞよろしくお願い致します！<br>" +
+                  "-----<br>";
+                document.getElementById("messageWrap").style = "text-align: center";
+                document.getElementById("messageWrap").innerHTML = message;
             }
 
             // 新規ユーザーの場合
