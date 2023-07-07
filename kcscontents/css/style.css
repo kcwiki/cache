@@ -182,7 +182,10 @@ a.hint:hover span{display:inline; position:absolute; border:1px solid #cccccc; b
 /*twitter*/
 #mainContents.twitter {width: 800px; height: 900px; background:#ffffff url(../twitter/image/bg_blue.gif) repeat-x left top; padding-top:40px;}
 #mainContents.twitter .illustArea {width:240px; float:left; padding:50px 0 0 10px;}
-#mainContents.twitter .blackboardArea {width:490px; float:right; background:url(../twitter/image/bg_blackboard.png) no-repeat left top; padding:30px 0 40px 40px; margin-right:10px; display:inline;}
+#mainContents.twitter .blackboardArea {width:490px; float:right; background:url(../twitter/image/bg_blackboard_2.png) no-repeat left top; padding:30px 0 40px 40px; margin-right:10px; display:inline;}
+
+.tweetTitle strong {padding-left:6px;margin-bottom:5px;padding-top: 26px;display:block; color: #bbee70;}
+.tweetBody {padding:0px 20px; color: #ffffff;}
 
 /* banner-title */
 .pages {
