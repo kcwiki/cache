@@ -185,6 +185,20 @@ a.hint:hover span{display:inline; position:absolute; border:1px solid #cccccc; b
 #mainContents.twitter .blackboardArea {width:490px; float:right; background:url(../twitter/image/bg_blackboard_2.png) no-repeat left top; padding:30px 0 40px 40px; margin-right:10px; display:inline;}
 
 .tweetTitle strong {padding-left:6px;margin-bottom:5px;padding-top: 26px;display:block; color: #bbee70;}
+@media screen and (max-width:450px){
+  .tweetContents{
+    background-color: #284312;
+    text-align: left;
+    overflow-x: hidden;
+    font-size: 1.5em;
+  }
+}
+.tweetContents{
+  background-color: #284312;
+  text-align: left;
+  overflow-x: hidden;
+  width: 450px;
+}
 .tweetBody {padding:0px 20px; color: #ffffff;}
 
 /* banner-title */
