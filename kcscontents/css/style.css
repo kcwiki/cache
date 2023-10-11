@@ -128,7 +128,7 @@ a.hint:hover span{display:inline; position:absolute; border:1px solid #cccccc; b
 /*ranking*/
 
 .rankPdt10{padding-top:10px!important;}
-.rankWrap01 {height:1025px!important;} /* 20201210 (920 to 1025) */
+.rankWrap01 {height:920px!important;} /* 20201210 (920 to 1025) */
 
 .rankingTable {margin-top:70px; 
    width: 760px;
