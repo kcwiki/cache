@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "node-fetch": "^2.6.9"
+    "node-fetch": "^2.7.0"
   }
 }
