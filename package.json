@@ -5,5 +5,12 @@
     "fs-extra": "^11.1.1",
     "lodash": "^4.17.21",
     "node-fetch": "^2.6.9"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "printWidth": 150,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }

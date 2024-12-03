@@ -267,6 +267,10 @@ function kcsGetLoginToken()
                     }
                 }, params);
             }
+        } else if (json.api_result == 200) {
+            // メンテナンス画面を表示する。
+            kcsStartMaintenanceHTML();
+            return;
         }
         // 過剰リロード検知の場合
         if(json.api_result == ConstParameterInfo.APIResult_NG_Reload)

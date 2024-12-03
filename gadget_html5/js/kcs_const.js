@@ -8,8 +8,8 @@ ConstSNSInfo.id = "DMM";
 
 // サーバー情報
 var ConstServerInfo = {};
-ConstServerInfo.Gadget           = "http://203.104.209.7/";
-ConstServerInfo.World_1          = "http://203.104.209.71/";
+ConstServerInfo.Gadget           = "http://w00g.kancolle-server.com/";
+ConstServerInfo.World_1          = "http://w01y.kancolle-server.com/";
 ConstServerInfo.World_2          = "http://203.104.209.87/";
 ConstServerInfo.World_3          = "http://125.6.184.215/";
 ConstServerInfo.World_4          = "http://203.104.209.183/";
@@ -52,14 +52,14 @@ ConnectionInfo.Interval_Min   = 10;
 
 // Maintenance 情報
 var MaintenanceInfo = {};
-MaintenanceInfo.IsDoing       = 1;
+MaintenanceInfo.IsDoing       = 0;
 MaintenanceInfo.IsEmergency   = 0;
-MaintenanceInfo.StartDateTime = Date.parse("2024/11/08 00:00:00");
-MaintenanceInfo.EndDateTime   = Date.parse("2024/11/08 00:59:59");
+MaintenanceInfo.StartDateTime = Date.parse("2024/12/03 00:00:00");
+MaintenanceInfo.EndDateTime   = Date.parse("2024/12/03 00:59:59");
 
 // Version 情報
 var VersionInfo = {};
-VersionInfo.scriptVesion      = "5.9.4.0";
+VersionInfo.scriptVesion      = "6.0.0.0";
 
 // Entrance 情報
 var EntranceInfo = {};
@@ -68,24 +68,24 @@ EntranceInfo.Interval_Min     = 1;
 EntranceInfo.UidIndex         = 0;
 
 // Entrance 情報（ワールド別）
-EntranceInfo.NewUser          = 0;
-EntranceInfo.World_1_User     = 0;
-EntranceInfo.World_2_User     = 0;
-EntranceInfo.World_3_User     = 0;
-EntranceInfo.World_4_User     = 0;
-EntranceInfo.World_5_User     = 0;
-EntranceInfo.World_6_User     = 0;
-EntranceInfo.World_7_User     = 0;
-EntranceInfo.World_8_User     = 0;
-EntranceInfo.World_9_User     = 0;
-EntranceInfo.World_10_User    = 0;
-EntranceInfo.World_11_User    = 0;
-EntranceInfo.World_12_User    = 0;
-EntranceInfo.World_13_User    = 0;
-EntranceInfo.World_14_User    = 0;
-EntranceInfo.World_15_User    = 0;
-EntranceInfo.World_16_User    = 0;
-EntranceInfo.World_17_User    = 0;
-EntranceInfo.World_18_User    = 0;
-EntranceInfo.World_19_User    = 0;
-EntranceInfo.World_20_User    = 0;
+EntranceInfo.NewUser          = 2;
+EntranceInfo.World_1_User     = 2;
+EntranceInfo.World_2_User     = 2;
+EntranceInfo.World_3_User     = 2;
+EntranceInfo.World_4_User     = 2;
+EntranceInfo.World_5_User     = 2;
+EntranceInfo.World_6_User     = 2;
+EntranceInfo.World_7_User     = 2;
+EntranceInfo.World_8_User     = 2;
+EntranceInfo.World_9_User     = 2;
+EntranceInfo.World_10_User    = 2;
+EntranceInfo.World_11_User    = 2;
+EntranceInfo.World_12_User    = 2;
+EntranceInfo.World_13_User    = 2;
+EntranceInfo.World_14_User    = 2;
+EntranceInfo.World_15_User    = 2;
+EntranceInfo.World_16_User    = 2;
+EntranceInfo.World_17_User    = 2;
+EntranceInfo.World_18_User    = 2;
+EntranceInfo.World_19_User    = 2;
+EntranceInfo.World_20_User    = 2;

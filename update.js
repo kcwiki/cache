@@ -12,7 +12,7 @@ const update = async (n = 1, s = 0) => {
   let modified = false
   for (let i = 0; i < n; ++i) {
     await map(keys(lastModified), async url => {
-      const path = url.replace('http://203.104.209.7/', '')
+      const path = url.replace('http://w00g.kancolle-server.com/', '')
       const useUrl = process.env.EDGE ? `${process.env.EDGE}${new URL(url).pathname.slice(1)}` : url
       const res = await fetch(useUrl, { headers: { 'if-modified-since': lastModified[url] } })
       if (res.status === 200) {

@@ -4,10 +4,10 @@
   "redirects": [
     {
       "description": "KanColle",
-      "exampleUrl": "http://203.104.209.7/gadget_html5/js/kcs_const.js",
+      "exampleUrl": "http://w00g.kancolle-server.com/gadget_html5/js/kcs_const.js",
       "exampleResult": "https://kcwiki.github.io/cache/gadget_html5/js/kcs_const.js",
       "error": null,
-      "includePattern": "http://203.104.209.7/(.+)",
+      "includePattern": "http://w00g.kancolle-server.com/(.+)",
       "excludePattern": "",
       "patternDesc": "KanColle gadget server block bypass",
       "redirectUrl": "https://kcwiki.github.io/cache/$1",

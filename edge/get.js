@@ -3,7 +3,7 @@ const fetch = require('node-fetch')
 
 export default async (req, res) => {
   try {
-    const url = `http://203.104.209.7/${decodeURIComponent(req.url.split('?url=')[1])}`
+    const url = `http://w00g.kancolle-server.com/${decodeURIComponent(req.url.split('?url=')[1])}`
     const subReq = await fetch(url, { headers: { 'if-modified-since': req.headers['if-modified-since'] } })
     res.writeHead(subReq.status, { 'last-modified': subReq.headers.get('last-modified') })
     if (subReq.ok) {
