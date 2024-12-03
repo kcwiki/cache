@@ -2,7 +2,7 @@ name: Update
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: '*/30 * * * *'
 jobs:
   report:
     runs-on: ubuntu-latest
@@ -10,12 +10,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "yarn"
+          node-version: '20'
+          cache: 'yarn'
       - run: yarn --frozen-lockfile
       - run: node update.js -
         env:
-          EDGE: ${{ secrets.EDGE }}
+          # EDGE: ${{ secrets.EDGE }}
+          GITHUB: true
       - run: |
           git config --global user.name "Botkaze"
           git config --global user.email "gkpyon+1@gmail.com"

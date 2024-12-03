@@ -35,9 +35,9 @@ const update = async (n = 1, s = 0) => {
 const main = async () => {
   console.log(`start  : ${new Date().toISOString()}`)
   try {
-    if (process.env.EDGE ? await update(5, 5) : await update()) {
+    if (await update()) {
       outputJsonSync('last-modified.json', fromPairs(sortBy(toPairs(lastModified), e => e[0])), { spaces: 2 })
-      if (!process.env.EDGE) {
+      if (!process.env.GITHUB) {
         spawnSync('./push.sh', [])
       }
     }

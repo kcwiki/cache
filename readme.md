@@ -2,7 +2,7 @@
 
 KanColle gadget server cache.
 
-This cache can be used to bypass the gadget server block:
+This cache can be used to bypass the gadget server ~~block~~ (as of **2024/12**, there is no block):
 
 - as a CDN (GitHub [pages](https://kcwiki.github.io/cache/gadget_html5/js/kcs_const.js)/Fastly) by the [DMM extension](https://github.com/kcwiki/chrome-extension-dmm)
 - [Redirector extension](https://github.com/einaregilsson/Redirector) (by importing [`redirector.json`](https://github.com/kcwiki/cache/blob/master/redirector.json))
@@ -11,4 +11,4 @@ This cache can be used to bypass the gadget server block:
 
 ## Updating
 
-Continuously run `node update.js` under a Japanese network. Or run `node update.js -` from a GitHub action with a Japanese edge function.
+Continuously run `node update.js` ~~under a Japanese network~~. Or run `node update.js -` from a GitHub action ~~with a Japanese edge function~~.
