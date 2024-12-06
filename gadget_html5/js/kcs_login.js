@@ -268,6 +268,9 @@ function kcsGetLoginToken()
                 }, params);
             }
         } else if (json.api_result == 200) {
+            // 画面下部の情報セクションを表示する。
+            document.getElementById("sectionWrap").style.display = "block";
+
             // メンテナンス画面を表示する。
             kcsStartMaintenanceHTML();
             return;
