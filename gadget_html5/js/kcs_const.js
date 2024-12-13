@@ -24,11 +24,11 @@ ConstServerInfo.World_12         = "http://w12p.kancolle-server.com/";
 ConstServerInfo.World_13         = "http://w13b.kancolle-server.com/";
 ConstServerInfo.World_14         = "http://w14h.kancolle-server.com/";
 ConstServerInfo.World_15         = "http://w15p.kancolle-server.com/";
-ConstServerInfo.World_16         = "http://125.6.189.247/";
-ConstServerInfo.World_17         = "http://203.104.209.23/";
-ConstServerInfo.World_18         = "http://203.104.209.39/";
-ConstServerInfo.World_19         = "http://203.104.209.55/";
-ConstServerInfo.World_20         = "http://203.104.209.102/";
+ConstServerInfo.World_16         = "http://w16s.kancolle-server.com/";
+ConstServerInfo.World_17         = "http://w17k.kancolle-server.com/";
+ConstServerInfo.World_18         = "http://w18i.kancolle-server.com/";
+ConstServerInfo.World_19         = "http://w19s.kancolle-server.com/";
+ConstServerInfo.World_20         = "http://w20h.kancolle-server.com/";
 ConstServerInfo.OSAPI            = "osapi.dmm.com";
 ConstServerInfo.NETGAME          = "http://www.dmm.com";
 
