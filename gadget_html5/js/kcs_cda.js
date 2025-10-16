@@ -20,11 +20,9 @@
         }
     }
 
-    // ゲームサーバー以外の呼び出しや空のデータに対しては何もしない
     if ((ConstServerInfo.NETGAME != event.origin && userWorldInfo.worldServerAddr != event.origin) || event.data == "") {
         return;
     }
-    // データの種別により処理を分岐
     var data = event.data.split("\t");
     if (data[0] == "0") {
         // 0: アイテム購入
@@ -41,15 +39,6 @@
     } else if(data[0] == "3") {
         // 3: 提督名変更
         kcsInspection_CreateInspectionNickName(data[1]);
-        return;
-    } else if(data[0] == "5") {
-        // 5: 設定情報を cookie に保存する
-        var options = data[1];
-        kcsOptions_Save(options);
-        return;
-    } else if(data[0] == "6") {
-        // 6: 設定情報を cookie から取得してゲーム側へ送信する
-        Options_SendMessage(kcsOptions_Load());
         return;
     }
 }, false);
@@ -73,19 +62,23 @@ function Inspection_SendMessage(CommentId) {
 }
 
 function Viewer_SendMessage() {
-
-    var gameElement = document.getElementById("htmlWrap").contentWindow;
-
-    if (gameElement) {
-        gameElement.postMessage(viewerInfo.id, ConstServerInfo.Gadget);
-    }
-}
-
-function Options_SendMessage(options) {
-
-    var gameElement = document.getElementById("htmlWrap").contentWindow;
-
-    if (gameElement) {
-        gameElement.postMessage(options, userWorldInfo.worldServerAddr);
-    }
+    var params = {};
+    params[opensocial.DataRequest.PeopleRequestFields.PROFILE_DETAILS] = [
+        "userType"
+    ];
+    var request = opensocial.newDataRequest();
+    request.add(
+        request.newFetchPersonRequest(
+            opensocial.IdSpec.PersonId.VIEWER, params), "viewer"
+    );
+    request.send(function(response) {
+        if (!response.hadError())
+        {
+            var viewer = response.get("viewer").getData();
+            var gameElement = document.getElementById("htmlWrap").contentWindow;
+            if (gameElement) {
+                gameElement.postMessage(viewer.getId(), ConstServerInfo.Gadget);
+            }
+        }
+    });
 }
