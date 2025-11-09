@@ -41,4 +41,4 @@ var MaintenanceInfo = {};
 MaintenanceInfo.IsDoing = 0;
 
 var VersionInfo = {};
-VersionInfo.scriptVesion = "6.2.0.1";
+VersionInfo.scriptVesion = "6.2.1.0";
