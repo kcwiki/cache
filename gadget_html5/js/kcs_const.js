@@ -2,7 +2,7 @@
 var KCS_DOMAIN = ".kancolle-server.com";
 
 var ConstGadgetInfo = {};
-ConstGadgetInfo.height = 960; //860;
+ConstGadgetInfo.height = 860; //960;
 
 var ConstServerInfo = {};
 ConstServerInfo.Gadget = KCS_PROTOCOL + "w00g" + KCS_DOMAIN + "/";
@@ -38,7 +38,7 @@ ConstURLInfo.ConnectionCheckURL = ConstServerInfo.Gadget + "index.html";
 ConstURLInfo.LoginURL = "kcsapi/api_auth_member/dmmlogin/";
 
 var MaintenanceInfo = {};
-MaintenanceInfo.IsDoing = 0;
+MaintenanceInfo.IsDoing = 1;
 
 var VersionInfo = {};
 VersionInfo.scriptVesion = "6.2.1.5";
