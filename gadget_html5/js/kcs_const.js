@@ -38,7 +38,7 @@ ConstURLInfo.ConnectionCheckURL = ConstServerInfo.Gadget + "index.html";
 ConstURLInfo.LoginURL = "kcsapi/api_auth_member/dmmlogin/";
 
 var MaintenanceInfo = {};
-MaintenanceInfo.IsDoing = 0;
+MaintenanceInfo.IsDoing = 1;
 
 var VersionInfo = {};
 VersionInfo.scriptVesion = "6.2.3.1";
